@@ -33,3 +33,17 @@ function getDivIdByNumber(divNumber) {
         default: return null;
     }
 }
+
+function Onchange(){
+    const magassag = parseInt(document.getElementById("magassag").value);
+    const szelesseg = parseInt(document.getElementById("szelesseg").value);
+    console.log(magassag)
+    console.log(szelesseg)
+    document.getElementsByClassName('items').setAttribute("style","height:"+magassag+"px");
+    document.getElementsByClassName('items').setAttribute("style","width:"+szelesseg+"px");
+
+    //document.getElementsByClassName('items').style.height= magassag+'px';
+    //document.getElementsByClassName('items').style.width= szelesseg+'px';
+
+
+}
