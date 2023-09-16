@@ -37,13 +37,12 @@ function getDivIdByNumber(divNumber) {
 function Onchange(){
     const magassag = parseInt(document.getElementById("magassag").value);
     const szelesseg = parseInt(document.getElementById("szelesseg").value);
-    console.log(magassag)
-    console.log(szelesseg)
-    document.getElementsByClassName('items').setAttribute("style","height:"+magassag+"px");
-    document.getElementsByClassName('items').setAttribute("style","width:"+szelesseg+"px");
-
-    //document.getElementsByClassName('items').style.height= magassag+'px';
-    //document.getElementsByClassName('items').style.width= szelesseg+'px';
-
+    
+    const divs = document.getElementsByClassName('items');
+    
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].style.height = magassag + 'px';
+        divs[i].style.width = szelesseg + 'px';
+    }
 
 }
