@@ -1,0 +1,31 @@
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: ;
+}
+
+#atlatszodiv{
+    margin: 10px, 20px;
+}
+
+header{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#cim{
+    background-color: white;
+}
+
+.napok{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
