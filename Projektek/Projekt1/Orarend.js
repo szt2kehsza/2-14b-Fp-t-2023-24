@@ -1,32 +1,55 @@
 
-function DarkModeChange(){
+var darkMode = false; 
+
+function DarkModeChange() {
     var button = document.getElementById('DarkMode');
-    var buttonText = button.textContent;
-    console.log(buttonText);
-    if (buttonText === "Világos mód"){
+    if (darkMode) {
         document.documentElement.style.setProperty('--kartyakhatterszine', 'white');
         document.documentElement.style.setProperty('--szovegszine', 'black');
-        document.documentElement.style.setProperty('--szovegszine', 'black');
-        button.textContent = "Sötét mód"; 
-        
+        button.style.backgroundImage = "url(cartoon-moon-icon.png)";
+        darkMode = false; 
     } else {
         document.documentElement.style.setProperty('--kartyakhatterszine', 'black');
-        document.documentElement.style.setProperty('--szovegszine', 'white');
-        button.textContent = "Világos mód"; 
+        document.documentElement.style.setProperty('--szovegszine', 'white');        
+        button.style.backgroundImage = "url(Sun.png)";
+        darkMode = true; 
     }
 }
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const menuIcon = document.getElementById("menuIcon");
-//     const menu = document.getElementById("menu");
-//     const closeBtn = document.getElementById("closeBtn");
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById("menuIcon");
+    const menu = document.getElementById("menu");
+    const closeBtn = document.getElementById("closeBtn");
 
-//     menuIcon.addEventListener("click", function() {
-//         menu.style.display = "block";
-//     });
+    menuIcon.addEventListener("click", function() {
+        menu.style.display = "block";
+    });
 
-//     closeBtn.addEventListener("click", function() {
-//         menu.style.display = "none";
-//     });
-// });
+    closeBtn.addEventListener("click", function() {
+        menu.style.display = "none";
+    });
+});
+
+
+const root = document.querySelector(':root')
+
+function Onchange(){
+    //betu szin
+    const selectedColor = document.getElementById("favcolor").value;
+    root.style.setProperty('--szovegszine', selectedColor);
+    
+    //betu tipus
+    var fontSelector = document.getElementById("font-style-selector");
+    var selectedFontIndex = fontSelector.selectedIndex; 
+    var selectedFont = fontSelector.options[selectedFontIndex].text; 
+    document.body.style.fontFamily = selectedFont;
+    var orakElemek = document.getElementsByClassName('orak');
+
+    for (var i = 0; i < orakElemek.length; i++) {
+        orakElemek[i].style.fontFamily = selectedFont;
+    }
+
+}
+
+

@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="Orarend.css">
     <script src="Orarend.js"></script>
     <title>Órarend</title>
+
 </head>
 <body>
 
-    <!-- <div class="icon" id="menuIcon"></div>
-    <div class="menu" id="menu">
+    
+    <div id="menuIcon"></div>
+    <div id="menu">
         <span id="closeBtn">✕</span>
         <ul>
-            <li><a href="#">Menüpont 1</a></li>
-            <li><a href="#">Menüpont 2</a></li>
+            <li>Betü szín:<input id="favcolor" type="color"/></li>
+            <li>Betű típusa:
+                <select id="font-style-selector">
+                    <option value="font-style1">Arial</option>
+                    <option value="font-style2">Times New Roman</option>
+                    <option value="font-style3">Courier New</option>
+                </select>
+            </li>
             <li><a href="#">Menüpont 3</a></li>
+            <button onclick="Onchange()">Mentés</button>
         </ul>
-    </div> -->
+    </div>
 
-    <button id="DarkMode" onclick="DarkModeChange()">Sötét mód</button>
+    <button id="DarkMode" onclick="DarkModeChange()"></button>
     
     <div id="atlatszodiv">
         
