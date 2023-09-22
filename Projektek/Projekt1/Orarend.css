@@ -90,12 +90,20 @@ header{
 
 }
 
-.icon {
+/* #DarkMode{
+    background-image: url(cartoon-moon-icon.png.webp);
+    background-repeat: no-repeat;
+    cursor:pointer;
+    border: none;
+
+} */
+
+/* .icon {
     cursor: pointer;
     position: absolute;
     top: 20px;
     left: 20px;
-    background-image: url(126472.png);
+    background-image: 126472.png;
     height: 30px;
     width: 30px;
 }
@@ -131,4 +139,4 @@ a {
     top: 20px;
     right: 20px;
     cursor: pointer;
-}
+} */

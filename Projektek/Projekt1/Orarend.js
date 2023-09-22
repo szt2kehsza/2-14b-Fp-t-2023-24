@@ -6,6 +6,7 @@ function DarkModeChange(){
     if (buttonText === "Világos mód"){
         document.documentElement.style.setProperty('--kartyakhatterszine', 'white');
         document.documentElement.style.setProperty('--szovegszine', 'black');
+        document.documentElement.style.setProperty('--szovegszine', 'black');
         button.textContent = "Sötét mód"; 
         
     } else {
@@ -16,16 +17,16 @@ function DarkModeChange(){
 }
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.getElementById("menuIcon");
-    const menu = document.getElementById("menu");
-    const closeBtn = document.getElementById("closeBtn");
+// document.addEventListener("DOMContentLoaded", function() {
+//     const menuIcon = document.getElementById("menuIcon");
+//     const menu = document.getElementById("menu");
+//     const closeBtn = document.getElementById("closeBtn");
 
-    menuIcon.addEventListener("click", function() {
-        menu.style.display = "block";
-    });
+//     menuIcon.addEventListener("click", function() {
+//         menu.style.display = "block";
+//     });
 
-    closeBtn.addEventListener("click", function() {
-        menu.style.display = "none";
-    });
-});
+//     closeBtn.addEventListener("click", function() {
+//         menu.style.display = "none";
+//     });
+// });
