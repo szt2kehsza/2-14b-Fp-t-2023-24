@@ -1,4 +1,5 @@
 :root{
+    --menuszin: white;
     --kartyakhatterszine: white;
     --szovegszine: black;
     --atlatszodivhattere: rgba(0, 0, 0, 0.7);
@@ -115,7 +116,7 @@ header{
     cursor: pointer; 
     background-size: cover; 
     background-repeat: no-repeat; 
-    color: var(--kartyakhatterszine); 
+    color: var(--menuszin); 
     background-image: url(3524659.png);
     width: 3em;
     height: 3em;
@@ -154,7 +155,7 @@ a {
 
 #closeBtn {
     font-size: 24px;
-    color: var(--kartyakhatterszine);
+    color: var(--menuszin);
     position: absolute;
     top: 20px;
     right: 20px;
@@ -174,6 +175,6 @@ a {
 }
 
 ul{
-    margin-top: 40px;
-    color: var(--kartyakhatterszine);
+    margin-top: 65px;
+    color: var(--menuszin);
 }
