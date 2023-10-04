@@ -6,13 +6,16 @@ function DarkModeChange() {
     if (darkMode) {
         document.documentElement.style.setProperty('--kartyakhatterszine', 'white');
         document.documentElement.style.setProperty('--szovegszine', 'black');
+        document.documentElement.style.setProperty('--atlatszohattervilagosm', 'rgba(255, 255, 255, 0.5)');
         button.style.backgroundImage = "url(cartoon-moon-icon.png)";
         darkMode = false; 
     } else {
         document.documentElement.style.setProperty('--kartyakhatterszine', 'black');
-        document.documentElement.style.setProperty('--szovegszine', 'white');        
+        document.documentElement.style.setProperty('--szovegszine', 'white');
+        document.documentElement.style.setProperty('--atlatszohattervilagosm', 'rgba(0, 0, 0, 0.5)');
         button.style.backgroundImage = "url(Sun.png)";
         darkMode = true; 
+        
     }
 }
 

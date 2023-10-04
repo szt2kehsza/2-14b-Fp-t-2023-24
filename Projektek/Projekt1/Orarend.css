@@ -1,7 +1,10 @@
 :root{
     --kartyakhatterszine: white;
     --szovegszine: black;
-    --atlatszohattervilagosm: rgba(0, 0, 0, 0.4);
+    --atlatszohattervilagosm: rgba(0, 0, 0, 0.7);
+    --atlatszodivhattere: rgba(0, 0, 0, 0.7);
+    --atlatszohattersotetm: rgba(255, 255, 255, 0.7);
+    --menuatlatszohatter: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -21,16 +24,16 @@ body{
     color: var(--szovegszine);
 }
 
-div{
+/* div{
     border: 1px solid var(--szovegszine);
    
-}
+} */
 
 #atlatszodiv{
     margin: 10px 40px;  
     padding: 30px 60px;
     background-color: transparent;
-    background: var(--atlatszohattervilagosm);
+    background: var(--atlatszodivhattere);
 }
 
 header{
@@ -75,7 +78,7 @@ header{
 .napok{
     font-size: 50px;
     font-weight: bold;
-    background-color: var(--kartyakhatterszine);
+    background-color: var(--atlatszohattervilagosm);
     padding: 0px 15px; 
     margin: 0px 10px 15px 15px;
 }
@@ -100,7 +103,7 @@ header{
     height: 3.5em;
     background-size: cover; 
     background-repeat: no-repeat; 
-    color: white; 
+    color: var(--kartyakhatterszine); 
     font-size: 16px; 
 
 }
@@ -112,7 +115,7 @@ header{
     cursor: pointer; 
     background-size: cover; 
     background-repeat: no-repeat; 
-    color: white; 
+    color: var(--kartyakhatterszine); 
     background-image: url(3524659.png);
     width: 3em;
     height: 3em;
@@ -131,7 +134,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--menuatlatszohatter);
     text-align: center;
 }
 
@@ -146,12 +149,12 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--kartyakhatterszine);
 }
 
 #closeBtn {
     font-size: 24px;
-    color: white;
+    color: var(--kartyakhatterszine);
     position: absolute;
     top: 20px;
     right: 20px;
@@ -168,4 +171,9 @@ a {
 
 .font-style3 {
     font-family: 'Courier New', monospace;
+}
+
+ul{
+    margin-top: 40px;
+    color: var(--kartyakhatterszine);
 }
