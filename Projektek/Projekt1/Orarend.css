@@ -1,8 +1,8 @@
 :root{
     --kartyakhatterszine: white;
     --szovegszine: black;
-    --atlatszohattervilagosm: rgba(0, 0, 0, 0.7);
     --atlatszodivhattere: rgba(0, 0, 0, 0.7);
+    --atlatszohattervilagosm: rgba(0, 0, 0, 0.7);
     --atlatszohattersotetm: rgba(255, 255, 255, 0.7);
     --menuatlatszohatter: rgba(0, 0, 0, 0.9);
 }
@@ -78,7 +78,7 @@ header{
 .napok{
     font-size: 50px;
     font-weight: bold;
-    background-color: var(--atlatszohattervilagosm);
+    background-color: var(--atlatszohattersotetm);
     padding: 0px 15px; 
     margin: 0px 10px 15px 15px;
 }
