@@ -195,4 +195,22 @@ ul{
     .orak{
         font-size: 20px;
     }
+    #cim{
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    #cim:after{
+        content:"";
+        position:absolute;
+        height:0;
+        width:0;
+        left:100%;
+        top:0;
+        border: 28px solid transparent;
+        border-left: 3.5rem solid var(--kartyakhatterszine);
+    
+    }
+
+    
 }
