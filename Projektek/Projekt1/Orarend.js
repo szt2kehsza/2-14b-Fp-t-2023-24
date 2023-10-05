@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     menuIcon.addEventListener("click", function() {
         menu.style.display = "block";
-        cim.style.display = "none"; //megkerdeznil, hogy jo-e!
+        cim.style.display = "none"; 
     });
 
     closeBtn.addEventListener("click", function() {
         menu.style.display = "none";
-        cim.style.display = "block"; //megkerdeznil, hogy jo-e!
+        cim.style.display = "block";
     });
 });
 

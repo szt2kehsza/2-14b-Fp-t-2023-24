@@ -178,3 +178,21 @@ ul{
     margin-top: 65px;
     color: var(--menuszin);
 }
+
+@media screen and (max-width: 600px) {
+    header{
+        font-size: 40px;
+    }
+    .napok{
+        font-size: 35px;
+    }
+    .hknnapok{
+        font-size: 15px;
+    }
+    .hvnapok{
+        font-size: 15px;
+    }
+    .orak{
+        font-size: 20px;
+    }
+}
