@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
 const root = document.querySelector(':root')
 
 function Onchange(){
-    //betu szin
+    //szin
     const selectedColor = document.getElementById("favcolor").value;
     root.style.setProperty('--szovegszine', selectedColor);
     
-    //betu tipus
+    //tipus
     var fontSelector = document.getElementById("font-style-selector");
     var selectedFontIndex = fontSelector.selectedIndex; 
     var selectedFont = fontSelector.options[selectedFontIndex].text; 
