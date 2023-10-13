@@ -15,4 +15,3 @@ delete user.firstName;
 
 //6.
 console.log(user);
-
